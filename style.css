@@ -1,0 +1,103 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #202870;
+}
+
+/* Calculator body */
+.main {
+    width: 320px;
+    background: #222240;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Display screen */
+.screen {
+    height: 70px;
+    background: #111;
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+/* Buttons container */
+.allButtons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Common button style */
+.allButtons button {
+    height: 55px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.2s;
+}
+
+/* Hover */
+.allButtons button:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Active */
+.allButtons button:active {
+    transform: scale(0.95);
+}
+
+/* Colors */
+.AC {
+    background: #e74c3c;
+    grid-column: span 2;
+}
+
+.cut {
+    background: #f39c12;
+}
+
+.percent,
+.plus,
+.subtract,
+.multiply,
+.divide,
+.point {
+    background: #1c70b4;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.zero {
+    background: #58cba7;
+}
+
+.equal {
+    background: #2ecc71;
+}
